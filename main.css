@@ -1,0 +1,67 @@
+body{
+  background: #333333;
+  padding-top: 10px;
+}
+
+#container{
+  color: white;
+  font-family: "Courier";
+  font-size: 20px;
+  position:absolute;
+  width:300px;
+  height:200px;
+  z-index:15;
+  top:50%;
+  left:50%;
+  margin:-100px 0 0 -150px;
+  transform: translate(-50%, -50%);
+
+}
+
+.symbol{
+  color: #FF0000;
+}
+.indent{
+  margin-left: 11em;
+}
+.string{
+  color: #FFFF00;
+}
+
+
+#container a{
+  color: yellow;
+  text-decoration: none;
+}
+#container a:hover{
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+::selection{
+  background: black;
+}
